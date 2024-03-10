@@ -173,7 +173,7 @@ const baseVertexShader = compileShader(
   gl.VERTEX_SHADER,
   `
     precision highp float;
-    precision mediump sampler2D;
+    precision highp sampler2D;
 
     attribute vec2 aPosition;
     varying vec2 vUv;
@@ -198,7 +198,7 @@ const clearShader = compileShader(
   gl.FRAGMENT_SHADER,
   `
     precision highp float;
-    precision mediump sampler2D;
+    precision highp sampler2D;
 
     varying vec2 vUv;
     uniform sampler2D uTexture;
@@ -214,7 +214,7 @@ const displayShader = compileShader(
   gl.FRAGMENT_SHADER,
   `
     precision highp float;
-    precision mediump sampler2D;
+    precision highp sampler2D;
 
     varying vec2 vUv;
     uniform sampler2D uTexture;
@@ -229,7 +229,7 @@ const splatShader = compileShader(
   gl.FRAGMENT_SHADER,
   `
     precision highp float;
-    precision mediump sampler2D;
+    precision highp sampler2D;
 
     varying vec2 vUv;
     uniform sampler2D uTarget;
@@ -252,7 +252,7 @@ const advectionManualFilteringShader = compileShader(
   gl.FRAGMENT_SHADER,
   `
     precision highp float;
-    precision mediump sampler2D;
+    precision highp sampler2D;
 
     varying vec2 vUv;
     uniform sampler2D uVelocity;
@@ -286,7 +286,7 @@ const advectionShader = compileShader(
   gl.FRAGMENT_SHADER,
   `
     precision highp float;
-    precision mediump sampler2D;
+    precision highp sampler2D;
 
     varying vec2 vUv;
     uniform sampler2D uVelocity;
@@ -307,7 +307,7 @@ const divergenceShader = compileShader(
   gl.FRAGMENT_SHADER,
   `
     precision highp float;
-    precision mediump sampler2D;
+    precision highp sampler2D;
 
     varying vec2 vUv;
     varying vec2 vL;
@@ -340,7 +340,7 @@ const curlShader = compileShader(
   gl.FRAGMENT_SHADER,
   `
     precision highp float;
-    precision mediump sampler2D;
+    precision highp sampler2D;
 
     varying vec2 vUv;
     varying vec2 vL;
@@ -364,7 +364,7 @@ const vorticityShader = compileShader(
   gl.FRAGMENT_SHADER,
   `
     precision highp float;
-    precision mediump sampler2D;
+    precision highp sampler2D;
 
     varying vec2 vUv;
     varying vec2 vT;
@@ -390,7 +390,7 @@ const pressureShader = compileShader(
   gl.FRAGMENT_SHADER,
   `
     precision highp float;
-    precision mediump sampler2D;
+    precision highp sampler2D;
 
     varying vec2 vUv;
     varying vec2 vL;
@@ -422,7 +422,7 @@ const gradientSubtractShader = compileShader(
   gl.FRAGMENT_SHADER,
   `
     precision highp float;
-    precision mediump sampler2D;
+    precision highp sampler2D;
 
     varying vec2 vUv;
     varying vec2 vL;
